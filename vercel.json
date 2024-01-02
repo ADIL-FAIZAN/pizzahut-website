@@ -1,29 +1,15 @@
 {
-   "builds": [
-     {
-       "src": "index.js",
-       "use": "@vercel/node"
-     },
-     {
-       "src": "build/**",
-       "use": "@vercel/static"
-     }
-   ],
- 
-    "routes":[
-    { "src": "api/updateddata/(.*)", "dest": "index.js" },
-    { "src": "/api/registeruser/(.*)", "dest": "index.js" },
-    { "src": "/api/userorder/(.*)", "dest": "index.js" },
-    { "src": "/api/pizzabyid/(.*)", "dest": "index.js" },
-    { "src": "/api/login/(.*)", "dest": "index.js" },
-    { "src": "/api/category/(.*)", "dest": "index.js" },
-    { "src": "/api/menudata/(.*)", "dest": "index.js" },
-    { "src": "/api/deletedata/(.*)", "dest": "index.js" }
-  
-  
-  
-  
-  
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
- }
+}
