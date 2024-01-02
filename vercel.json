@@ -10,5 +10,20 @@
      }
    ],
  
-   "rewrites": [{ "source": "/(.*)", "destination": "index.js" }]
+    "routes":[
+    { "source": "api/updateddata/(.*)", "destination": "index.js" },
+    { "source": "/api/registeruser/(.*)", "destination": "index.js" },
+    { "source": "/api/userorder/(.*)", "destination": "index.js" },
+    { "source": "/api/pizzabyid/(.*)", "destination": "index.js" },
+    { "source": "/api/login/(.*)", "destination": "index.js" },
+    { "source": "/api/category/(.*)", "destination": "index.js" },
+    { "source": "/api/menudata/(.*)", "destination": "index.js" },
+    { "source": "/api/deletedata/(.*)", "destination": "index.js" }
+  
+  
+  
+  
+  
+  
+  ]
  }
