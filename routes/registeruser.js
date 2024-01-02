@@ -5,7 +5,7 @@ const {registeruser}=require('../models/registerusermodel')
 const registeruserSchema=require("../validation/registeruser")
 const validate =require("../middleware/validateuser")
 //const bcrypt=require("bcrypt")
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 
 router.post("/",validate(registeruserSchema),async (req,res)=>{
