@@ -11,14 +11,14 @@
    ],
  
     "routes":[
-    { "source": "api/updateddata/(.*)", "destination": "index.js" },
-    { "source": "/api/registeruser/(.*)", "destination": "index.js" },
-    { "source": "/api/userorder/(.*)", "destination": "index.js" },
-    { "source": "/api/pizzabyid/(.*)", "destination": "index.js" },
-    { "source": "/api/login/(.*)", "destination": "index.js" },
-    { "source": "/api/category/(.*)", "destination": "index.js" },
-    { "source": "/api/menudata/(.*)", "destination": "index.js" },
-    { "source": "/api/deletedata/(.*)", "destination": "index.js" }
+    { "src": "api/updateddata/(.*)", "dest": "index.js" },
+    { "src": "/api/registeruser/(.*)", "dest": "index.js" },
+    { "src": "/api/userorder/(.*)", "dest": "index.js" },
+    { "src": "/api/pizzabyid/(.*)", "dest": "index.js" },
+    { "src": "/api/login/(.*)", "dest": "index.js" },
+    { "src": "/api/category/(.*)", "dest": "index.js" },
+    { "src": "/api/menudata/(.*)", "dest": "index.js" },
+    { "src": "/api/deletedata/(.*)", "dest": "index.js" }
   
   
   
