@@ -4,7 +4,8 @@ const router = express.Router();
 const {registeruser}=require('../models/registerusermodel')
 const registeruserSchema=require("../validation/registeruser")
 const validate =require("../middleware/validateuser")
-const bcrypt=require("bcrypt")
+//const bcrypt=require("bcrypt")
+const bcrypt = require('bcryptjs');
 
 
 router.post("/",validate(registeruserSchema),async (req,res)=>{
